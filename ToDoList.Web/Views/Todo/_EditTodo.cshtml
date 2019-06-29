@@ -1,0 +1,33 @@
+﻿<div id="modalEditTodo" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Todo</h4>
+            </div>
+
+            <div class="modal-body">
+
+                @Html.Hidden("hiddenEditId")
+
+                <div class="form-group col-lg-12">
+                    <label for="editLastModification">Modification Date</label>
+                    <input name="editLastModification" class="form-control " readonly id="editLastModification" />
+                </div>
+
+                <div class="form-group col-lg-12">
+                    <label for="editDescription">Description</label>
+                    <textarea style="min-width: 100%;" class="form-control form-control-sm" rows="5" 
+                              id="editDescription" name="editDescription" maxlength="255"></textarea>
+                    <p id="edit-text-limit"></p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="return EditTodo();">Edit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

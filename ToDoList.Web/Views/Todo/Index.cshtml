@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "To do List";
+}
+
+@section styles
+{
+    <style>
+        .text-wrap {
+            white-space: normal;
+            word-break: break-all;
+        }
+    </style>
+
+    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+}
+
+@section scripts
+{
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/Todo/ListTodo.js"></script>
+    <script src="~/Scripts/Todo/AddToDo.js"></script>
+    <script src="~/Scripts/Todo/EditToDo.js"></script>
+}
+
+@Html.Partial("_EditTodo")
+@Html.Partial("_NewTodo")
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default container-fluid">
+            <div class="panel-heading row">
+
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalNewTodo" title="Add a new To Do item">
+                        Add New <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="panel-body">
+                <table id="todoTable" class="display" style="width:100%"></table>
+            </div>
+        </div>
+    </div>
+</div>

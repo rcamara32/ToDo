@@ -1,0 +1,45 @@
+﻿
+@{
+      ViewBag.Title = "To do List";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+
+        <!-- Single button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Post It!</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<a href="javascript:;" class="button" id="add_new">Add New Note</a>
+<div id="board">
+
+</div>
+
+
+@section styles
+{
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
+
+    <link href="~/Content/ToDo.css" rel="stylesheet" />
+}
+
+@section scripts
+{
+
+    <script src="~/Scripts/PostItAll/jquery.postitall.js"></script>
+
+
+
+    <script src="~/Scripts/Todo/todo.js"></script>
+}
