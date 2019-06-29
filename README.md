@@ -59,6 +59,12 @@ of each method of the business rule.
 * Moq
 
 
+### Extras
+
+By performing the operations via ajax requests, 
+it took longer to perform the validations, and extra functions in the javascript.
+
+
 ### Configuration
 
 To run the project, you must follow the steps below:
