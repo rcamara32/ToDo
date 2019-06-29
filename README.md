@@ -10,7 +10,7 @@ if he does not have access, he can register in the application.
 
 ## Project Info
 
-The official home of the `PyOxidizer` project is
+The official home of the `To Do` project is
 https://github.com/rcamara32/ToDo.
 
 
