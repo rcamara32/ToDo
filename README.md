@@ -69,8 +69,8 @@ it took longer to perform the validations, and extra functions in the javascript
 
 To run the project, you must follow the steps below:
 
-- Change the connectionstring within web.config to the database you have access to.
-- Open the Package Manager Console, choose the ToDoList.Repository project and run the command line: "update-database -verbose".
+- Change the `connectionstring` within `web.config` to the database you have access to.
+- Open the Package Manager Console, choose the ToDoList.Repository project and run the command line: `update-database -verbose`.
 
 
 After that the database will be created with some initial data 
