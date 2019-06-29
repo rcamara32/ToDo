@@ -42,6 +42,36 @@ namespace ToDoList.Repository.Migrations
                 UserId = context.User.FirstOrDefault(x => x.UserName == "renan.camara").Id
             });
 
+
+            todos.Add(new Todo
+            {
+                Description = "Seeking for a new .net developer",
+                ModificationDate = DateTime.Now.AddDays(-10),
+                Done = true,
+                UserId = context.User.FirstOrDefault(x => x.UserName == "deloitte.ireland").Id
+            });
+            todos.Add(new Todo
+            {
+                Description = "Find Renan's Curriculum",
+                ModificationDate = DateTime.Now.AddDays(-7),
+                Done = true,
+                UserId = context.User.FirstOrDefault(x => x.UserName == "deloitte.ireland").Id
+            });
+            todos.Add(new Todo
+            {
+                Description = "Call Renan and do an interview",
+                ModificationDate = DateTime.Now.AddDays(-5),
+                Done = true,
+                UserId = context.User.FirstOrDefault(x => x.UserName == "deloitte.ireland").Id
+            });
+            todos.Add(new Todo
+            {
+                Description = "Hire Renan!",
+                ModificationDate = DateTime.Now,
+                Done = false,
+                UserId = context.User.FirstOrDefault(x => x.UserName == "deloitte.ireland").Id
+            });
+
             context.Todo.AddRange(todos);
 
             base.Seed(context);
